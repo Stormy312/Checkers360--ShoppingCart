@@ -32,7 +32,7 @@ def add_item(cart): #the add item Method
     try:
         price = float(input(f"Enter price for {item}: R "))
         quantity = int(input(f"Enter quantity of {item}: "))
-    except ValueError:
+    except ValueError: # Error handling for the Menu
         print("Invalid input of price and quantity must be integers. ")
         return
 
