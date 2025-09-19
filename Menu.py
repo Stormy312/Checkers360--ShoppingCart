@@ -8,6 +8,7 @@ def checkout(cart): # checkout method also main exit of application
     if not cart:
         print("Your cart is empty")
     else:
+        # Final calculation of all items
         total = sum(details["price"] * details["quantity"] for details in cart.values())
         print(f"Final Total: R{total:.2f}")
     print("Thank you for shopping at Checkers360! Proceeding to checkout...")
